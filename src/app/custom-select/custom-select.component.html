@@ -1,0 +1,3 @@
+<select [name]="name" (change)="onCustomSelectChange($event)">
+  <option *ngFor="let option of optionsObj" [value]="option.value">{{ option.label }}</option>
+</select>
